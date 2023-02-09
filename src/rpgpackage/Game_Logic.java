@@ -32,14 +32,14 @@ public class Game_Logic {
 
 
     public void processCommand(String[] x) {
-        // This is where i'll be writing else-ifs to process what command was entered
+        // This is where I'll be writing else-ifs to process what command was entered
         if(x[0].equals("look")){
             look(x);
         }
     }
 
+    // Optional entered commands will go here
     public void look(String[] x){
-        // Optional entered commands will go here
         System.out.println("You looked.");
     }
 
@@ -48,10 +48,10 @@ public class Game_Logic {
         //creating your character
         System.out.println("Welcome to RPG_Project 1. What's your name? ");
         Game_Objects.playable_character.name = scan.nextLine();
-        System.out.println("You are starting with 75 HP and 25 strength. ");
         Game_Objects.playable_character.hp = 75;
         Game_Objects.playable_character.strength = 25;
         Game_Objects.playable_character.inRoom = 1;
+        System.out.println("You are starting with " + Game_Objects.playable_character.hp + " HP and " + Game_Objects.playable_character.strength + " strength.");
     }
 
 
